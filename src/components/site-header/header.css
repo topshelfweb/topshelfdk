@@ -1,0 +1,13 @@
+.siteHeader {
+	background-color: hsl(0, 0%, 16%);
+	color: hsl(0, 0%, 93%);
+	display: flex;
+	justify-content: space-between;
+	height: 5em;
+	line-height: 5em;
+}
+
+.siteHeader__brand {
+	color: hsl(0, 79%, 59%);
+	font-family: "Comfortaa";
+}

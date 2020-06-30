@@ -1,0 +1,5 @@
+{
+	"required": {
+		"some": [ "nesting", "id" ]
+	}
+}

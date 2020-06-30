@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Comfortaa:wght@700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: "Chivo", Arial, Helvetica, sans-serif;
+	font-size: calc(16px + (21 - 16) * (100vw - 412px) / (1920 - 412));
+	overflow-y: scroll;
+	background-color: hsl(0, 0%, 93%);
+	color: hsl(0, 0%, 11%);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+	padding: 0 1em;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+@media screen and (min-width: 64em) {
+	.container {
+		max-width: 70%;
+	}
+}
+
+.sr-only {
+	visibility: hidden;
+	display: block;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}

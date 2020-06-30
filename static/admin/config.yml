@@ -1,0 +1,91 @@
+--- 
+  backend: 
+    branch: master
+    commit_messages: 
+      create: "Create {{collection}} “{{slug}}”"
+      delete: "Delete {{collection}} “{{slug}}”"
+      deleteMedia: "[skip ci] Delete “{{path}}”"
+      update: "Update {{collection}} “{{slug}}”"
+      uploadMedia: "[skip ci] Upload “{{path}}”"
+    name: git-gateway
+  collections: 
+    - 
+      files: 
+        - 
+          fields: 
+            - 
+              default: index-page
+              label: "Template Key"
+              name: templateKey
+              widget: hidden
+            - 
+              label: "Hero"
+              name: hero
+              widget: object
+              fields: 
+                - 
+                  label: "Caption"
+                  name: caption
+                  widget: string
+                - 
+                  label: Image
+                  name: image
+                  widget: image
+            - 
+              label: "Phone number"
+              name: phonenumber
+              widget: number
+            - 
+              label: "Contact Text"
+              name: contacttext
+              widget: text
+            - 
+              fields: 
+                - 
+                  label: Name
+                  name: name
+                  widget: string
+                - 
+                  label: Street
+                  name: street
+                  widget: string
+                - 
+                  label: Zip-code
+                  name: zip
+                  widget: string
+                - 
+                  label: City
+                  name: city
+                  widget: string
+              label: Address
+              name: address
+              widget: object
+            - label: Services
+              name: services
+              widget: list
+              fields:
+                - 
+                  label: Title
+                  name: title
+                  widget: string
+            - 
+              fields: 
+                - 
+                  label: Name
+                  name: name
+                  widget: string
+                - 
+                  label: Title
+                  name: title
+                  widget: string
+              label: Employees
+              name: employees
+              widget: list
+          file: src/pages/index.md
+          label: "Home Page"
+          name: index
+      label: Pages
+      name: pages
+  media_folder: static/img
+  public_folder: /img
+  

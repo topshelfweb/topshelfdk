@@ -1,0 +1,14 @@
+.primaryNavigation {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.primaryNavigation__item:not(:last-of-type) {
+	margin-right: 2em;
+}
+
+.primaryNavigation__link {
+	color: hsl(0, 0%, 93%);
+}
