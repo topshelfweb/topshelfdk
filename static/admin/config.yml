@@ -68,19 +68,14 @@
                   label: Title
                   name: title
                   widget: string
-            - 
-              fields: 
                 - 
-                  label: Name
-                  name: name
-                  widget: string
+                  label: Content
+                  name: Content
+                  widget: text
                 - 
-                  label: Title
-                  name: title
-                  widget: string
-              label: Employees
-              name: employees
-              widget: list
+                  label: Image
+                  name: image
+                  widget: image
           file: src/pages/index.md
           label: "Home Page"
           name: index
