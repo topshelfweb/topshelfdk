@@ -1,0 +1,25 @@
+.serviceContainer {
+	justify-content: space-between;
+}
+
+.serviceCard {
+	background-color: white;
+	padding: 1em;
+	border-radius: 9px;
+}
+
+.serviceCard:not(:last-of-type) {
+	margin-bottom: 2em;
+}
+
+@media screen and (min-width: 64em) {
+	.serviceCard:not(:last-of-type) {
+		margin-right: 2em;
+		margin-bottom: 0;
+	}
+}
+
+.serviceCard__image {
+	width: 100%;
+	height: auto;
+}

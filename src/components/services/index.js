@@ -1,12 +1,15 @@
 import React from "react";
+import "./services.css";
 
 function Services({services}) {
 	return (
-		<section className="flex">
+		<section className="flex serviceContainer">
 			{services.map(service => {
 				return (
-					<article>
+					<article className="serviceCard" key={ service.title }>
+						<img src={ service.image.publicURL } className="serviceCard__image" alt="" />
 						<h1>{ service.title }</h1>
+				<p>{ service.content }</p>
 					</article>
 				)
 			})}
