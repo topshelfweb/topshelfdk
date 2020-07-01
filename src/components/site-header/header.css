@@ -8,6 +8,21 @@
 }
 
 .siteHeader__brand {
-	color: hsl(0, 79%, 59%);
+	color: hsl(0, 0%, 93%);
 	font-family: "Comfortaa";
+	margin-top: 9px;
+}
+
+.siteBrand__logo {
+	height: 2em;
+}
+
+@media screen and (min-width: 64em) {
+	.siteHeader__brand {
+		margin-top: 17px;
+	}
+
+	.siteBrand__logo {
+		height: 3em;
+	}
 }
