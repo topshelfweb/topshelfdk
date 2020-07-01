@@ -61,6 +61,13 @@ button::after {
 
 .contactSection {
 	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 64em) {
+	.contactSection {
+		flex-direction: row;
+	}
 }
 
 form[name="contact-form"] {

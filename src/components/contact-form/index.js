@@ -4,7 +4,7 @@ import "./contact-form.css";
 
 function ContactForm({ contacttext, address, phonenumber }) {
 	return (
-		<section id="contact" class="container wrapper contactSection">
+		<section id="kontakt" className="container wrapper contactSection">
 			<article>
 				<h1>Kontakt os</h1>
 				<p>{ contacttext }</p>
