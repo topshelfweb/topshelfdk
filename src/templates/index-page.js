@@ -13,7 +13,7 @@ export function IndexPageTemplate({ hero , phonenumber, contacttext, address, se
 				hero={hero}
 				phonenumber={phonenumber} />
 			
-			<section className="wrapper container" id="about">
+			<section className="wrapper container" id="services">
 				<h1>Hvad kan vi tilbyde dig?</h1>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, omnis accusamus dolore mollitia tempora quod. Officia aut vero cumque nobis, provident animi, optio, nostrum perferendis alias ipsum tempora magni.</p>
 				<Services services={services} />
@@ -32,7 +32,7 @@ export function IndexPageTemplate({ hero , phonenumber, contacttext, address, se
 		</>
 	);
 }
-	
+
 export default function IndexPage({ data }) {
 	const { frontmatter } = data.markdownRemark;
 	return (
@@ -76,6 +76,10 @@ export const pageQuery = graphql`
 				}
 				services {
 					title
+					image {
+						publicURL
+					}
+					content
 				}
 			}
 		}
