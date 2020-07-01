@@ -1,21 +1,9 @@
 ---
-contacttext: Du kan altid ringe til os, men hvis vi er optagede eller har lukket
-  kan du skrive til os ved hjælp af denne kontaktformular.
-address:
-  city: Kalundborg
-  name: topshelf
-  street: Slagelsevej 10, 2.th.
-  zip: "4400"
-employees:
-  - name: Peter Burke
-    title: CEO
-  - name: Nick Holden
-    title: Artist
 templateKey: index-page
 hero:
   image: /img/my-business.jpg
   caption: Vil du have flere kunder?
-phonenumber: 21821030
+  cta: hello@topshelf.dk
 services:
   - title: Ny hjemmeside
     content: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -35,4 +23,14 @@ services:
       Officia aut vero cumque nobis, provident animi, optio, nostrum perferendis
       alias ipsum tempora magni.
     image: /img/undraw_search_engines_nn9e.svg
+contact:
+  heading: Kontakt os
+  content: Du kan altid ringe til os, men hvis vi er optagede eller har lukket kan du skrive til os ved hjælp af denne kontaktformular.
+  address:
+    name: topshelf
+    street: Slagelsevej 10, 2.th.
+    zip: 4400
+    city: Kalundborg
+    email: hello@topshelf.dk
+    phonenumber: 21821030
 ---

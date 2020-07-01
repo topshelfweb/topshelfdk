@@ -5,14 +5,11 @@ function IndexPagePreview({ entry, getAsset }) {
 	let data = entry.getIn(["data"]).toJS();
 
 	if (data) {
-		console.log(data)
 		return (
 			<IndexPageTemplate
 				hero={data.hero}
-				phonenumber={data.phonenumber}
-				address={data.address}
 				services={data.services}
-				contacttext={data.contacttext} />
+				contact={data.contact} />
 		);
 	} else {
 		return <div>Loading...</div>

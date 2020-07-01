@@ -24,43 +24,19 @@
               widget: object
               fields: 
                 - 
-                  label: "Caption"
-                  name: caption
-                  widget: string
-                - 
                   label: Image
                   name: image
                   widget: image
+                - 
+                  label: Caption
+                  name: caption
+                  widget: string
+                - 
+                  label: CTA
+                  name: cta
+                  widget: string
             - 
-              label: "Phone number"
-              name: phonenumber
-              widget: number
-            - 
-              label: "Contact Text"
-              name: contacttext
-              widget: text
-            - 
-              fields: 
-                - 
-                  label: Name
-                  name: name
-                  widget: string
-                - 
-                  label: Street
-                  name: street
-                  widget: string
-                - 
-                  label: Zip-code
-                  name: zip
-                  widget: string
-                - 
-                  label: City
-                  name: city
-                  widget: string
-              label: Address
-              name: address
-              widget: object
-            - label: Services
+              label: Services
               name: services
               widget: list
               fields:
@@ -70,12 +46,54 @@
                   widget: string
                 - 
                   label: Content
-                  name: Content
+                  name: content
                   widget: text
                 - 
                   label: Image
                   name: image
                   widget: image
+            - 
+              label: Contact
+              name: contact
+              widget: object
+              fields: 
+                - 
+                  label: Heading
+                  name: heading
+                  widget: string
+                -
+                  label: Content
+                  name: content
+                  widget: text
+                - 
+                  label: Address
+                  name: address
+                  widget: object
+                  fields: 
+                    - 
+                      label: Name
+                      name: name
+                      widget: string
+                    - 
+                      label: Street
+                      name: street
+                      widget: string
+                    - 
+                      label: "Zip code"
+                      name: zip
+                      widget: string
+                    - 
+                      label: City
+                      name: city
+                      widget: string
+                    - 
+                      label: Phone
+                      name: phonenumber
+                      widget: string
+                    - 
+                      label: Email
+                      name: email
+                      widget: string
           file: src/pages/index.md
           label: "Home Page"
           name: index

@@ -6,12 +6,10 @@ import ContactForm from "../components/contact-form";
 import Services from "../components/services";
 import "./index-page.css";
 
-export function IndexPageTemplate({ hero , phonenumber, contacttext, address, services}) {
+export function IndexPageTemplate({ hero, contact, services}) {
 	return (
 		<>
-			<Hero
-				hero={hero}
-				phonenumber={phonenumber} />
+			<Hero hero={hero} />
 			
 			<section className="wrapper container" id="services">
 				<h1>Hvad kan vi tilbyde dig?</h1>
@@ -19,11 +17,7 @@ export function IndexPageTemplate({ hero , phonenumber, contacttext, address, se
 				<Services services={services} />
 			</section>
 
-			<ContactForm
-				contacttext={contacttext}
-				phonenumber={phonenumber}
-				address={address}
-			/>
+			<ContactForm contact={contact} />
 
 			<footer style={{
 				backgroundColor: "hsl(0, 0%, 16%)",
@@ -39,9 +33,7 @@ export default function IndexPage({ data }) {
 		<Layout>
 			<IndexPageTemplate
 				hero={ frontmatter.hero }
-				phonenumber={ frontmatter.phonenumber }
-				contacttext={ frontmatter.contacttext }
-				address={frontmatter.address}
+				contact={ frontmatter.contact }
 				services={frontmatter.services}
 			/>
 		</Layout>
@@ -54,6 +46,7 @@ export const pageQuery = graphql`
 			frontmatter {
 				hero {
 					caption
+					cta
 					image {
 						childImageSharp {
 							fluid(quality: 90, maxWidth: 1000) {
@@ -62,17 +55,17 @@ export const pageQuery = graphql`
 						}
 					}
 				}
-				phonenumber
-				contacttext
-				address {
-					name
-					street
-					zip
-					city
-				}
-				employees {
-					name
-					title
+				contact {
+					address {
+						city
+						name
+						street
+						zip
+						email
+						phonenumber
+					}
+					heading
+					content
 				}
 				services {
 					title
