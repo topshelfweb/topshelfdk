@@ -9,7 +9,7 @@ function Layout({ children }) {
 			<Helmet>
 				<html lang="da" />
 				<meta name="description" content="I Mit Firma laver vi ting som kan sælges." />
-				<title>Mit Firma</title>
+				<title>topshelf - moderne webløsninger</title>
 			</Helmet>
 			<SiteHeader />
 			<main>
