@@ -10,6 +10,7 @@
 .hero__heading {
 	margin-top: 9em;
 	color: hsl(0, 79%, 59%);
+	align-self: center;
 }
 
 .CTAphone {
