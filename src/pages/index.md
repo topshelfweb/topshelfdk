@@ -14,23 +14,23 @@ employees:
 templateKey: index-page
 hero:
   image: /img/my-business.jpg
-  caption: topshelf
+  caption: Vil du have flere kunder?
 phonenumber: 21821030
 services:
   - title: Ny hjemmeside
-    Content: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
       Exercitationem pariatur, omnis accusamus dolore mollitia tempora quod.
       Officia aut vero cumque nobis, provident animi, optio, nostrum perferendis
       alias ipsum tempora magni.
     image: /img/undraw_static_website_0107.svg
   - title: Abonner på ændringer
-    Content: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
       Exercitationem pariatur, omnis accusamus dolore mollitia tempora quod.
       Officia aut vero cumque nobis, provident animi, optio, nostrum perferendis
       alias ipsum tempora magni.
     image: /img/undraw_subscriptions_1xdv.svg
   - title: SEO - søgemaskineoptimering
-    Content: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
       Exercitationem pariatur, omnis accusamus dolore mollitia tempora quod.
       Officia aut vero cumque nobis, provident animi, optio, nostrum perferendis
       alias ipsum tempora magni.
