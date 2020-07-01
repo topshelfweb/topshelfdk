@@ -7,10 +7,10 @@ function Navbar() {
 		<nav>
 			<ul className="primaryNavigation">
 				<li className="primaryNavigation__item">
-					<Link to="/#contact" className="primaryNavigation__link">Kontakt os</Link>
+					<Link to="/#services" className="primaryNavigation__link">Services</Link>
 				</li>
 				<li className="primaryNavigation__item">
-					<Link to="/#about" className="primaryNavigation__link">Om os</Link>
+					<Link to="/#kontakt" className="primaryNavigation__link">Kontakt os</Link>
 				</li>
 			</ul>
 		</nav>
