@@ -7,7 +7,7 @@ function Services({services}) {
 			{services.map(service => {
 				return (
 					<article className="serviceCard" key={ service.title }>
-						<img src={ service.image.publicURL } className="serviceCard__image" alt="" />
+						<img src={ service.image.publicURL ? service.image.publicURL : service.image } className="serviceCard__image" alt="" />
 						<h1>{ service.title }</h1>
 				<p>{ service.content }</p>
 					</article>
