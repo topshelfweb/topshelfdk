@@ -10,7 +10,6 @@
 .siteHeader__brand {
 	color: hsl(0, 0%, 93%);
 	font-family: "Comfortaa";
-	margin-top: 9px;
 }
 
 .siteBrand__logo {
@@ -19,7 +18,7 @@
 
 @media screen and (min-width: 64em) {
 	.siteHeader__brand {
-		margin-top: 17px;
+		margin-top: 19px;
 	}
 
 	.siteBrand__logo {
