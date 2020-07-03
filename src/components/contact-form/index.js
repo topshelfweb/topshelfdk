@@ -2,18 +2,18 @@ import React from "react";
 import Spacer from "../spacer";
 import "./contact-form.css";
 
-function ContactForm({ contact }) {
+function ContactForm({ data }) {
 	return (
 		<section id="kontakt" className="container wrapper contactSection">
 			<article>
-				<h1>{ contact.heading }</h1>
-				<p>{ contact.content }</p>
+				<h1>{ data.heading }</h1>
+				<p>{ data.content }</p>
 				<address>
-					{ contact.address.name }<br/>
-					{ contact.address.street }<br/>
-					{ contact.address.zip + " " + contact.address.city }<br/><br/>
-					Tlf: <a href={ "tel:0045" + contact.address.phonenumber }>{ contact.address.phonenumber }</a><br/>
-					<a href={ "mailto:" + contact.address.email }>{ contact.address.email }</a>
+					{ data.address.name }<br/>
+					{ data.address.street }<br/>
+					{ data.address.zip + " " + data.address.city }<br/><br/>
+					Tlf: <a href={ "tel:0045" + data.address.phonenumber }>{ data.address.phonenumber }</a><br/>
+					<a href={ "mailto:" + data.address.email }>{ data.address.email }</a>
 				</address>
 			</article>
 			<form action="/" name="contact-form" data-netlify="true" data-netlify-honeypot="contact-form">

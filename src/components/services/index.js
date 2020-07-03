@@ -2,12 +2,10 @@ import React from "react";
 import "./services.css";
 import Card from "../card";
 
-function Services({services}) {
+function Services({data}) {
 	return (
 		<section className="flex serviceContainer">
-			{services.map(service => {
-				return <Card data={service} />
-			})}
+			{data.map(service => <Card data={service} />)}
 		</section>
 	)
 }

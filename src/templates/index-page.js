@@ -9,15 +9,15 @@ import "./index-page.css";
 export function IndexPageTemplate({ hero, contact, services}) {
 	return (
 		<>
-			<Hero hero={hero} />
+			<Hero data={hero} />
 			
 			<section className="wrapper container" id="services">
 				<h1>Hvad kan vi tilbyde dig?</h1>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, omnis accusamus dolore mollitia tempora quod. Officia aut vero cumque nobis, provident animi, optio, nostrum perferendis alias ipsum tempora magni.</p>
-				<Services services={services} />
+				<Services data={services} />
 			</section>
 
-			<ContactForm contact={contact} />
+			<ContactForm data={contact} />
 
 			<footer style={{
 				backgroundColor: "hsl(0, 0%, 16%)",
