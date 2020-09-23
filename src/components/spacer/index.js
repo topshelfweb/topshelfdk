@@ -7,7 +7,7 @@ function Spacer({ horizontal = 0, vertical = 0}) {
 			marginBottom: vertical / 2 + "px",
 			marginLeft: horizontal / 2 + "px",
 			marginRight: horizontal / 2 + "px"
-		}}></div>
+		}}/>
 	)
 }
 

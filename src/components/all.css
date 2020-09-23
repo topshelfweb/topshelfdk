@@ -24,8 +24,13 @@ h1,h2,h3,h4,h5,h6 {
 .container {
 	max-width: 100%;
 	margin: 0 auto;
-	padding-top: 1em;
+	padding-top: 6em;
 	padding-bottom: 1em;
+	box-sizing: border-box;
+}
+
+.sectionPage {
+	min-height: 100vh;
 }
 
 @media screen and (min-width: 64em) {

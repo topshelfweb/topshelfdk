@@ -9,9 +9,7 @@ import "./index-page.css";
 export function IndexPageTemplate({ hero, contact, services}) {
 	return (
 		<>
-			<Hero data={hero} />
-			
-			<section className="wrapper container" id="services">
+			<section className="wrapper container sectionPage" id="services">
 				<h1>Hvad kan vi tilbyde dig?</h1>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, omnis accusamus dolore mollitia tempora quod. Officia aut vero cumque nobis, provident animi, optio, nostrum perferendis alias ipsum tempora magni.</p>
 				<Services data={services} />
