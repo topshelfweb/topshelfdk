@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import Hero from "../components/hero";
+//import Hero from "../components/hero";
 import ContactForm from "../components/contact-form";
 import Services from "../components/services";
 import "./index-page.css";
@@ -10,7 +10,7 @@ export function IndexPageTemplate({ hero, contact, services}) {
 	return (
 		<>
 			<section className="wrapper container sectionPage" id="services">
-				<h1>Hvad kan vi tilbyde dig?</h1>
+				<h1>Hvad kan jeg tilbyde dig?</h1>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, omnis accusamus dolore mollitia tempora quod. Officia aut vero cumque nobis, provident animi, optio, nostrum perferendis alias ipsum tempora magni.</p>
 				<Services data={services} />
 			</section>

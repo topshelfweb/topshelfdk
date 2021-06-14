@@ -13,6 +13,9 @@
 }
 
 @media screen and (min-width: 64em) {
+	.serviceCard {
+		width: calc(100% / 3);
+	}
 	.serviceCard:not(:last-of-type) {
 		margin-right: 2em;
 		margin-bottom: 0;

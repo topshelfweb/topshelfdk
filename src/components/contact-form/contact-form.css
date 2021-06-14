@@ -41,7 +41,7 @@ button {
 	font-family: inherit;
 	font-size: inherit;
 	background-color: hsl(0, 79%, 59%);
-	color: hsl(0, 0%, 93%);
+	color: hsl(0, 0%, 100%);
 	border: none;
 	padding: 0.5em 1em;
 	position: relative;
@@ -49,7 +49,7 @@ button {
 }
 
 button::after {
-	border: 2px solid hsl(0, 0%, 93%);
+	border: 2px solid hsl(0, 0%, 100%);
 	content: "";
 	position: absolute;
 	top: 0;
@@ -62,12 +62,12 @@ button::after {
 .contactSection {
 	display: flex;
 	flex-direction: column;
-	gap: 5em;
 }
 
 @media screen and (min-width: 64em) {
 	.contactSection {
 		flex-direction: row;
+		gap: 5em;
 	}
 }
 

@@ -6,9 +6,7 @@ hero:
   cta: hello@topshelf.dk
 services:
   - title: Ny hjemmeside
-    content: Din hjemmeside er din virksomheds ansigt til verden. Trænger din
-      virksomhed til et ansigtsløft? Vi kan hjælpe! Vi hjælper dig med at finde
-      en visuel identitet.
+    content: Trænger din virksomhed til et ansigtsløft? Din hjemmeside er din virksomheds ansigt til verden. Jeg hjælper dig med at finde en visuel identitet som er moderne.
     image: /img/undraw_static_website_0107.svg
   - title: Abonner på ændringer
     content: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -23,9 +21,9 @@ services:
       alias ipsum tempora magni.
     image: /img/undraw_search_engines_nn9e.svg
 contact:
-  heading: Kontakt os
-  content: Du kan altid ringe til os, men hvis vi er optagede eller har lukket kan
-    du skrive til os ved hjælp af denne kontaktformular.
+  heading: Kontakt
+  content: Du kan altid ringe til mig, men hvis jeg er optaget eller har lukket kan
+    du skrive ved hjælp af denne kontaktformular.
   address:
     name: topshelf
     street: Slagelsevej 10, 2.th.
