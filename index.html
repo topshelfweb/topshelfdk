@@ -78,17 +78,17 @@
 			<div class="container contactSection">
 				<div>
 					<h2>Kontakt</h2>
-					<p>Du kan altid ringe til mig, men hvis jeg er optaget eller har lukket kan du skrive ved hjælp af denne
-						kontaktformular.</p>
+					<p>Kontakt mig gerne via formularen nedenfor.</p>
+					<p>Jeg læser alle henvendelser og vender tilbage hurtigst muligt. Har din henvendelse behov for en samtale,
+						aftaler vi et tidspunkt, der passer begge parter.</p>
 					<address>
 						Topshelf Konsulentservices<br>
 						Slagelsevej 10, 2.th.<br>
 						4400 Kalundborg<br><br>
-						Tlf.: <a href="tel:004521821030">21821030</a><br>
 						E-mail: <a href="mailto:hello@topshelf.dk">hello@topshelf.dk</a>
 					</address>
 				</div>
-				<form>
+				<form data-netlify="true">
 					<div class="inputGroup">
 						<label>
 							<span>Navn</span>
@@ -107,13 +107,14 @@
 							<input type="tel" name="telephone">
 						</label>
 					</div>
-					<div class="inputGroup alternate">
-						<label>
+					<div class="inputGroup">
+						<label class="alternate">
 							<span>Jeg vil gerne kontaktes om</span>
 							<textarea name="message"></textarea>
 						</label>
 					</div>
 					<button type="submit">Send</button>
+					<input type="hidden" name="form-name" value="contact-form" />
 				</form>
 			</div>
 		</section>
