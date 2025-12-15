@@ -135,6 +135,14 @@ p {
 	padding-bottom: 2rem;
 }
 
+@media screen and (min-width: 64rem) {
+	.contactSection {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 2rem;
+	}
+}
+
 .inputGroup {
 	margin-bottom: 1rem;
 
@@ -159,6 +167,7 @@ textarea {
 	border: 1px solid var(--foreground);
 	resize: none;
 	padding: 0.1rem 0.2rem;
+	min-width: 70%;
 }
 
 textarea {
