@@ -112,6 +112,16 @@ main {
 	}
 }
 
+footer {
+	background-color: var(--NordicInk);
+	color: var(--IceBlue);
+	padding: 2rem 0;
+
+	address {
+		font-style: normal;
+	}
+}
+
 h1,
 h2 {
 	font-family: Comfortaa, Arial, Helvetica, sans-serif;
@@ -167,11 +177,6 @@ p {
 			flex-direction: column;
 		}
 	}
-}
-
-
-address {
-	margin: 1rem 0;
 }
 
 input,
