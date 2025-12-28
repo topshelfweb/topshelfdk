@@ -10,7 +10,7 @@ export default function Contact() {
 					<p>Jeg læser alle henvendelser og vender tilbage hurtigst muligt. Har din henvendelse behov for en samtale,
 						aftaler vi et tidspunkt, der passer begge parter.</p>
 				</div>
-				<form data-netlify="true" className="col-span-1">
+				<form data-netlify="true" className="col-span-1" action="/__forms.html" method="POST">
 					<div className="mb-4">
 						<label className="flex justify-between">
 							<span className="after:content-['_*']">Navn</span>
