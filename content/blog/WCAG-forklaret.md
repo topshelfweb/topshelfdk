@@ -37,7 +37,7 @@ Kort sagt: rigtige mennesker i virkelige situationer.
 WCAG omtales ofte som:
 - Lange krav
 - Komplekse succeskriterier
-- Noget “udviklerne må klare”
+- Noget "udviklerne må klare"
 
 Resultatet er, at mange beslutningstagere:
 - Udskyder arbejdet
@@ -66,7 +66,7 @@ Uden at gå i paragraffer er der tre helt konkrete risici:
 - I kan blive juridisk udfordret
 
 Men ofte er den største risiko den usynlige:  
-At jeres hjemmeside virker “god nok”, men reelt fravælges af mange.
+At jeres hjemmeside virker "god nok", men reelt fravælges af mange.
 
 ## Hvordan kommer man i gang uden at drukne?
 

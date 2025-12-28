@@ -10,7 +10,7 @@ Det er en klassiker:
 Hjemmesiden er ny, visuelt gennemført og teknisk velfungerende men leads, henvendelser eller salg udebliver.
 
 For mange virksomheder er konklusionen hurtig:  
-*“Vi skal nok bare have mere trafik.”*
+*"Vi skal nok bare have mere trafik."*
 
 Min erfaring siger noget andet.
 
@@ -47,7 +47,7 @@ De leder efter:
 Hvis de ikke får det inden for få sekunder, er de videre.  
 Ikke fordi din løsning er dårlig, men fordi oplevelsen ikke hjælper dem nok på vej.
 
-## “Vi ved jo godt, hvad der er meningen”
+## "Vi ved jo godt, hvad der er meningen"
 
 Det gør *I*, men det gør brugeren ikke.
 
@@ -90,11 +90,11 @@ Det indebærer typisk:
 - Analyse af, om siden understøtter brugerens mål, ikke kun virksomhedens
 
 Det er netop den type gennemgang, jeg arbejder med:  
-Ikke for at “finde fejl”, men for at skabe klarhed og retning.
+Ikke for at "finde fejl", men for at skabe klarhed og retning.
 
 ## Hvad nu?
 
-Hvis du sidder med fornemmelsen af, at *“vores hjemmeside burde performe bedre”*, så er du langt fra alene.
+Hvis du sidder med fornemmelsen af, at *"vores hjemmeside burde performe bedre"*, så er du langt fra alene.
 
 Det første skridt er ikke nødvendigvis et nyt design,  
 men **indsigt i, hvad der faktisk står i vejen for brugeren**.
