@@ -32,6 +32,8 @@ Typiske symptomer jeg ofte møder:
 Ingen af delene er “fejl” i klassisk forstand.  
 Men tilsammen er de ofte nok til, at brugeren forlader siden igen.
 
+![Infografik der opsummerer denne artikel](/infografik-001.png)
+
 ## Brugere gør ikke det, du forventer
 
 Noget af det vigtigste at forstå er dette:

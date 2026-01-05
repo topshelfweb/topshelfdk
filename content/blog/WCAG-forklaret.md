@@ -46,6 +46,8 @@ Resultatet er, at mange beslutningstagere:
 
 Men tilgængelighed fungerer bedst, når det tænkes ind som en del af brugeroplevelsen – ikke som et tillæg.
 
+![Infografik der opsummerer denne artikel](/infografik-003.png)
+
 ## Tilgængelighed og god UX hænger tæt sammen
 
 Meget af det, der gør en side tilgængelig, gør den også mere brugervenlig:

@@ -38,6 +38,8 @@ Hvis svaret bare én gang er "nej", mister I dem.
 Det ironiske er, at mange virksomheder først tester, *når noget tydeligt går galt*.  
 Men på det tidspunkt er brugerne allerede forsvundet.
 
+![Infografik der opsummerer denne artikel](/infografik-002.png)
+
 ## Hvad brugervenlighedstest egentlig er
 
 Brugervenlighedstest handler ikke om at bevise, at noget virker.  
