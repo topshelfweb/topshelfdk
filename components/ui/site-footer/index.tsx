@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Container from "../container";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGlasses, FaLinkedin, FaRss, FaSitemap } from "react-icons/fa";
 
 export default function SiteFooter() {
 	return (
@@ -20,10 +20,13 @@ export default function SiteFooter() {
 					<h2>Links</h2>
 					<ul>
 						<li>
-							<Link href="/artikler">Artikler</Link>
+							<Link href="/artikler" className="flex gap-2 items-center"><FaGlasses /> Artikler</Link>
 						</li>
 						<li>
-							<Link href="/sitemap.xml">Sitemap</Link>
+							<Link href="/sitemap.xml" className="flex gap-2 items-center"><FaSitemap /> Sitemap</Link>
+						</li>
+						<li>
+							<Link href="/rss.xml" className="flex gap-2 items-center"><FaRss /> RSS feed</Link>
 						</li>
 					</ul>
 				</div>
