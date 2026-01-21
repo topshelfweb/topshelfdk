@@ -26,8 +26,8 @@ export default function NewsletterSignupForm() {
 					Ja tak, send mig nyhedsbrevet
 				</button>
 			</div>
-			{formState.errors?.length ? <p className="text-red-300">{formState.errors.toString()}</p> : null}
-			{formState.success && <p>{formState.success}</p>}
+			{formState.errors?.length ? <p className="text-red-300" role="alert">{formState.errors.toString()}</p> : null}
+			{formState.success && <p role="alert">{formState.success}</p>}
 		</form>
 	);
 }
