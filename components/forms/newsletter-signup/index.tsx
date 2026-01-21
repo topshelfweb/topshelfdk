@@ -13,7 +13,7 @@ export default function NewsletterSignupForm() {
 	}, [formState]);
 
 	return (
-		<form data-netlify="true" className="text-center" action={formAction}>
+		<form className="text-center" action={formAction}>
 			<div className="mb-4 flex flex-col gap-4 lg:flex-row items-center">
 				<label>
 					<span>E-mail&nbsp;</span>
