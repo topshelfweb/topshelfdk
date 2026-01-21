@@ -10,7 +10,7 @@ export async function GET(request: Request) {
 			<description>${post.excerpt}</description>
 			<link>https://www.topshelf.dk/artikler/${post.slug}</link>
 			<pubDate>${post.date}</pubDate>
-	 </item>`));
+	 </item>`)).join("");
 
 	const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
