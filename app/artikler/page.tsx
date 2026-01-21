@@ -20,7 +20,7 @@ export default async function BlogPage() {
 		<section className="py-8 min-h-screen">
 			<Container>
 				<h2>Artikler</h2>
-				<ul className="flex flex-col lg:flex-row gap-8">
+				<ul className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 					{posts.map((post, index) => <li className="flex-[1_1_0]" key={index}><ArticleCard article={post} /></li>)}
 				</ul>
 			</Container>
