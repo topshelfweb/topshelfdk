@@ -28,16 +28,26 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 		return notFound();
 	}
 
+	const baseUrl = new URL(process.env.NEXT_PUBLIC_SITE_URL!);
+  	const ogImageUrl = new URL(`/artikler/${slug}/opengraph-image`, baseUrl);
+
 	return {
 		title: post.title,
 		description: post.excerpt,
 		openGraph: {
+			url: new URL(`/artikler/${slug}`, baseUrl).toString(),
 			title: post.title,
 			description: post.excerpt,
 			type: 'article',
 			publishedTime: post.date,
 			authors: [post.author || 'Brian Emilius'],
 			tags: post.tags,
+			images: [{
+				url: ogImageUrl.toString(),
+				width: 1200,
+				height: 630,
+				alt: post.title,
+			}],
 		},
 	};
 }
