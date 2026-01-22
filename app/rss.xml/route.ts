@@ -2,7 +2,6 @@ import { getAllPosts } from "@/lib/blog";
 
 export async function GET(request: Request) {
 	const posts = await getAllPosts();
-	console.log(posts);
 
 	const postsInRSSFormat = posts.map(post => (`<item>
 			<title>${post.title}</title>
