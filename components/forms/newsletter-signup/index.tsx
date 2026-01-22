@@ -8,7 +8,6 @@ export default function NewsletterSignupForm() {
 	const inputRef = useRef<HTMLInputElement>(null);
 
 	useEffect(function () {
-		console.log("formState", formState);
 		if (formState.errors?.length) inputRef.current?.focus();
 	}, [formState]);
 

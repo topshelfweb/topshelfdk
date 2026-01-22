@@ -16,7 +16,7 @@ export interface Service {
 
 export default function ServiceCard({ service }: { service: Service }) {
 	return (
-		<motion.li className="flex-[1_1_0]" initial={{ transform: "translateY(100px)", opacity: 0 }} whileInView={{ transform: "translateY(0)", opacity: 1 }}>
+		<li className="flex-[1_1_0]">
 			{/* <Link href={service.link}> */}
 			<article className="p-8 rounded-md min-h-full bg-snowwhite dark:bg-fjordblue drop-shadow-xl dark:drop-shadow-none">
 				<h2 dangerouslySetInnerHTML={{ __html: service.title }} className="text-3xl font-heading" />
@@ -24,6 +24,6 @@ export default function ServiceCard({ service }: { service: Service }) {
 				<p dangerouslySetInnerHTML={{ __html: service.text }} />
 			</article>
 			{/* </Link> */}
-		</motion.li>
+		</li>
 	)
 }

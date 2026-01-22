@@ -56,7 +56,6 @@ export default async function NewsletterAction(prevState: FormState, formData: F
 			errors: []
 		}
 	} catch (error) {
-		console.log(error);
 		return {
 			success: false,
 			data: { email },

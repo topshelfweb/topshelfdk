@@ -1,7 +1,6 @@
 "use client";
 import Container from "@/components/ui/container";
 import ServiceCard from "@/components/ui/sevice-card";
-import { motion, stagger } from "motion/react"
 
 const serviceInfo = [
 	{
@@ -49,9 +48,9 @@ export default function Services() {
 				<p>Med næsten 30 års erfaring i udvikling af websites og apps, og over 11 år som underviser,
 					hjælper jeg web-bureauer med at styrke brugeroplevelsen og sikre tilgængelighed i deres løsninger. Mit fokus
 					er praktisk, jordnær rådgivning, der kan omsættes direkte i projekterne.</p>
-				<motion.ul className="mt-8 flex flex-col lg:flex-row gap-8">
+				<ul className="mt-8 flex flex-col lg:flex-row gap-8">
 					{serviceInfo.map((service, index) => <ServiceCard key={index} service={service} />)}
-				</motion.ul>
+				</ul>
 			</Container>
 		</section>
 	);

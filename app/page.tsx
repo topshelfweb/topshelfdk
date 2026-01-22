@@ -1,7 +1,7 @@
-import Articles from "./articles";
-import Contact from "./contact";
-import Hero from "./hero";
-import Services from "./services";
+import Articles from "../components/ui/new-articles-section";
+import Contact from "../components/ui/contact-section";
+import Hero from "../components/ui/hero-section";
+import Services from "../components/ui/services-section";
 
 export default function Home() {
   return (
