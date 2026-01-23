@@ -36,8 +36,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 		description: post.excerpt,
 		openGraph: {
 			url: new URL(`/artikler/${slug}`, baseUrl).toString(),
-			title: post.title,
-			description: post.excerpt,
+			title: post.title.slice(0, 60),
+			description: post.excerpt.slice(0, 155),
 			type: 'article',
 			publishedTime: post.date,
 			authors: [post.author || 'Brian Emilius'],
