@@ -7,7 +7,7 @@ export default function ContactForm() {
 	const [formState, formAction, isPending] = useActionState(ContactFormAction, { data: { name: "", email: "", telephone: "", message: "" } });
 
 	useEffect(function () {
-		console.log("formState", formState);
+		//console.log("formState", formState);
 	}, [formState]);
 
 	return (
@@ -15,21 +15,21 @@ export default function ContactForm() {
 			<div className="mb-4">
 				<label className="flex justify-between">
 					<span className="after:content-['_*']">Navn</span>
-					<input type="text" name="name" defaultValue={formState.data.name} required className="bg-snowwhite border border-fjordblue text-nordicink py-[.1rem] px-[.2rem] min-w-[70%]" />
+					<input type="text" name="name" defaultValue={formState.data.name} autoComplete="name" required className="bg-snowwhite border border-fjordblue text-nordicink py-[.1rem] px-[.2rem] min-w-[70%]" />
 				</label>
 				{formState.errors?.name && <span className="text-red-400" role="alert">{formState.errors?.name.errors}</span>}
 			</div>
 			<div className="mb-4">
 				<label className="flex justify-between">
 					<span className="after:content-['_*']">E-mail</span>
-					<input type="email" name="email" defaultValue={formState.data.email} required className="bg-snowwhite border border-fjordblue text-nordicink py-[.1rem] px-[.2rem] min-w-[70%]" />
+					<input type="email" name="email" defaultValue={formState.data.email} autoComplete="email" required className="bg-snowwhite border border-fjordblue text-nordicink py-[.1rem] px-[.2rem] min-w-[70%]" />
 				</label>
 				{formState.errors?.email && <span className="text-red-400" role="alert">{formState.errors?.email.errors}</span>}
 			</div>
 			<div className="mb-4">
 				<label className="flex justify-between">
 					<span className="after:content-['_*']">Telefon</span>
-					<input type="tel" name="telephone" defaultValue={formState.data.telephone} required className="bg-snowwhite border border-fjordblue text-nordicink py-[.1rem] px-[.2rem] min-w-[70%]" />
+					<input type="tel" name="telephone" defaultValue={formState.data.telephone} autoComplete="tel" required className="bg-snowwhite border border-fjordblue text-nordicink py-[.1rem] px-[.2rem] min-w-[70%]" />
 				</label>
 				{formState.errors?.telephone && <span className="text-red-400" role="alert">{formState.errors?.telephone.errors}</span>}
 			</div>

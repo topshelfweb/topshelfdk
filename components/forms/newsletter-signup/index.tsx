@@ -16,7 +16,7 @@ export default function NewsletterSignupForm() {
 			<div className="mb-4 flex flex-col gap-4 lg:flex-row items-center">
 				<label>
 					<span>E-mail&nbsp;</span>
-					<input ref={inputRef} type="email" name="email" defaultValue={formState.data.email} className={`bg-snowwhite px-1 py-1 text-nordicink ${formState.errors?.length && "border border-red-600"}`} placeholder="din@email.dk" required />
+					<input ref={inputRef} type="email" name="email" autoComplete="email" defaultValue={formState.data.email} className={`bg-snowwhite px-1 py-1 text-nordicink ${formState.errors?.length && "border border-red-600"}`} placeholder="din@email.dk" required />
 				</label>
 				<button
 					disabled={isPending}
