@@ -1,7 +1,7 @@
 ---
 title: "Kan man bruge jeres hjemmeside uden mus? (de færreste har testet det)"
 excerpt: "Mange brugere kan i hverdagen ikke bruge en mus, midlertidigt eller permanent. Derfor er tastaturnavigation ikke et nichekrav, men en grundlæggende del af god brugeroplevelse og tilgængelighed. Artiklen forklarer, hvad det vil sige at kunne navigere en hjemmeside udelukkende med tastatur, hvorfor fokusindikatorer og korrekt rækkefølge er afgørende, og hvordan du på bare 5 minutter selv kan teste, om din løsning reelt fungerer for flere, ikke færre."
-date: "2026-01-26"
+date: "2024-01-26"
 tags: ["accessability"]
 featured: true
 author: "Brian Emilius"
