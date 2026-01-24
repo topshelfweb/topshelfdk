@@ -50,7 +50,7 @@ Det er heldigvis meget let at teste om din navigation virker som den skal.
 - åbne en bestemt artikel
 - lægge en vare i kurven og gennemføre bestilling
 
-2) Læg musen væg og brug kun tastaturet. 
+2) Læg musen væk og brug kun tastaturet. 
 Brug TAB, ESC, pilenavigation, mellemrumstasten og ENTER.
 
 Skriv dine erfaringer ned: Hvad gik godt, hvad gik ikke godt.
