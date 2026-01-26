@@ -16,8 +16,31 @@ export const metadata: Metadata = {
 export default async function BlogPage() {
 	const posts = await getAllPosts();
 
+	const ldJson = {
+		"@context": "https://schema.org",
+		"@type": "Blog",
+		"name": "Topshelf Artikler",
+		"description": "Tekniske artikler og indsigter om webudvikling og tilgængelighed",
+		"url": `${process.env.NEXT_PUBLIC_SITE_URL}/artikler`,
+		"blogPost": posts.map((post) => ({
+			"@type": "BlogPosting",
+			"headline": post.title,
+			"author": post.author || "Brian Emilius",
+			"datePublished": post.date,
+			"wordCount": post.readingTime.words,
+			"keywords": post.tags.join(", "),
+			"url": `${process.env.NEXT_PUBLIC_SITE_URL}/artikler/${post.slug}`,
+		})),
+	};
+
 	return (
 		<section className="py-8 min-h-screen">
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+				__html: JSON.stringify(ldJson).replace(/</g, '\\u003c'),
+				}}
+			/>
 			<Container>
 				<h2>Artikler</h2>
 				<ul className="grid grid-cols-1 lg:grid-cols-3 gap-8">
