@@ -3,7 +3,7 @@ title: "WCAG forklaret for beslutningstagere (uden paragraffer)"
 excerpt: "Tilgængelighed handler ikke kun om lovkrav og teknik, det handler om mennesker. I dette indlæg forklarer jeg WCAG i et sprog, beslutningstagere kan forstå, og viser hvordan tilgængelighed og god brugeroplevelse i praksis er to sider af samme sag."
 date: "2026-01-05"
 tags: ["accessibility"]
-featured: true
+featured: false
 author: "Brian Emilius"
 ---
 Tilgængelighed bliver ofte opfattet som noget teknisk, tungt og juridisk.  

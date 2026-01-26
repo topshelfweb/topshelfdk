@@ -3,7 +3,7 @@ title: "Hvorfor din hjemmeside ikke konverterer, selvom den ser flot ud"
 excerpt: "Din hjemmeside kan være flot, teknisk velfungerende og stadig ikke konvertere. Ofte er problemet ikke designet, men brugeroplevelsen. I dette indlæg gennemgår jeg de mest almindelige UX-fejl, jeg ser igen og igen, og forklarer, hvordan små justeringer kan fjerne tvivl, skabe klarhed og gøre det lettere for brugeren at handle."
 date: "2025-12-29"
 tags: ["ux"]
-featured: true
+featured: false
 author: "Brian Emilius"
 ---
 Det er en klassiker:  

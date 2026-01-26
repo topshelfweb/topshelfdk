@@ -3,7 +3,7 @@ title: "Formularer (hvor leads dør i stilhed)"
 excerpt: "Mange formularer ser flotte ud, men er i praksis utilgængelige, fordi labels er lavet som placeholders. Det gør formularen usynlig for skærmlæsere og ubrugelig for en stor gruppe brugere."
 date: "2026-01-20"
 tags: ["accessibility"]
-featured: true
+featured: false
 author: "Brian Emilius"
 ---
 Jeg ser rigtig ofte formularer, på ellers professionelt designede hjemmesider, som ikke har labels.
