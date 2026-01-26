@@ -25,9 +25,8 @@ export interface BlogPost {
 
 export function getPostSlugs() {
 	const files = fs.readdirSync(path.join(postsDirectory));
-	const convertedToSlugs =  files.map(file => file.replace(".md", ""));
-	const filteredSlugs = convertedToSlugs.filter(slug => !slug.startsWith("_"));
-	return filteredSlugs;
+	const convertedToSlugs = files.map(file => file.replace(".md", ""));
+	return process.env.NODE_ENV === "production" ? convertedToSlugs.filter(slug => !slug.startsWith("_")) : convertedToSlugs;
 }
 
 export async function getAllPosts(): Promise<BlogPost[]> {
