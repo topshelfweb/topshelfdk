@@ -66,3 +66,8 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
 		return null;
 	}
 }
+
+export async function getPostsByTag(tag: string): Promise<BlogPost[]> {
+	const allPosts = await getAllPosts();
+	return allPosts.filter(post => post.tags.includes(tag));
+}
