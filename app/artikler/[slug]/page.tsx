@@ -83,13 +83,13 @@ export default async function BlogPage({ params }: BlogPostPageProps) {
 			<Container className="py-8">
 				<p><Link href="/">Hjem</Link> <FaChevronRight className="inline align-middle mb-1" /> <Link href="/artikler">Artikler</Link> <FaChevronRight className="inline align-middle mb-1" /> {post.title}</p>
 				<div className="xl:flex xl:gap-32">
-					<article id="blogPost" className="xl:flex-2">
+					<article id="blogPost" className="xl:flex-2" itemScope itemType="https://schema.org/Article">
 						<header>
-							<h1 className="font-heading text-3xl">{post.title}</h1>
-							<p>Af {post.author}, <time dateTime={post.date}>{new Date(post.date).toLocaleDateString("da-DK", { day: "numeric", weekday: "long", month: "long", year: "numeric" })}</time></p>
-							<p>{post.readingTime.words} ord, ca. {Math.round(post.readingTime.minutes)} minutter</p>
+							<h1 className="font-heading text-3xl" itemProp="name">{post.title}</h1>
+							<p>Af <span itemProp="author">{post.author}</span>, <time dateTime={post.date} itemProp="datePublished">{new Date(post.date).toLocaleDateString("da-DK", { day: "numeric", weekday: "long", month: "long", year: "numeric" })}</time></p>
+							<p><span itemProp="wordCount">{post.readingTime.words}</span> ord, ca. {Math.round(post.readingTime.minutes)} minutter</p>
 						</header>
-						<div dangerouslySetInnerHTML={{ __html: post.content }} className="pt-8" />
+						<div dangerouslySetInnerHTML={{ __html: post.content }} className="pt-8" itemProp="articleBody" />
 					</article>
 					<aside className="xl:flex-1">
 						<h2 className="font-heading text-2xl mt-12 mb-4">Relaterede artikler</h2>
