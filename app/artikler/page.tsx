@@ -25,11 +25,16 @@ export default async function BlogPage() {
 		"blogPost": posts.map((post) => ({
 			"@type": "BlogPosting",
 			"headline": post.title,
-			"author": post.author || "Brian Emilius",
-			"datePublished": post.date,
+			"author": {
+				"@type": "Person",
+				"name": post.author || "Brian Emilius",
+				"url": "https://www.brianemilius.com/about"
+			},
+			"datePublished": new Date(post.date).toISOString(),
 			"wordCount": post.readingTime.words,
 			"keywords": post.tags.join(", "),
 			"url": `${process.env.NEXT_PUBLIC_SITE_URL}/artikler/${post.slug}`,
+			"image": "${process.env.NEXT_PUBLIC_SITE_URL}/artikler/${post.slug}/opengraph-image"
 		})),
 	};
 
