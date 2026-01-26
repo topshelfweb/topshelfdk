@@ -82,8 +82,8 @@ export default async function BlogPage({ params }: BlogPostPageProps) {
 		<>
 			<Container className="py-8">
 				<p><Link href="/">Hjem</Link> <FaChevronRight className="inline align-middle mb-1" /> <Link href="/artikler">Artikler</Link> <FaChevronRight className="inline align-middle mb-1" /> {post.title}</p>
-				<div className="xl:flex xl:gap-16">
-					<article id="blogPost" className="xl:flex-3">
+				<div className="xl:flex xl:gap-32">
+					<article id="blogPost" className="xl:flex-2">
 						<header>
 							<h1 className="font-heading text-3xl">{post.title}</h1>
 							<p>Af {post.author}, <time dateTime={post.date}>{new Date(post.date).toLocaleDateString("da-DK", { day: "numeric", weekday: "long", month: "long", year: "numeric" })}</time></p>
