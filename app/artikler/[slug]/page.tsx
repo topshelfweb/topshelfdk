@@ -1,12 +1,12 @@
 import { BlogPost, getAllPosts, getPostBySlug, getPostsByTag } from "@/lib/blog";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import hljs from 'highlight.js';
-import 'highlight.js/styles/default.css';
 import Container from "@/components/ui/container";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import ArticleCard from "@/components/ui/article-card";
+import LinkedinShareButton from "@/components/ui/linkedin-sharebutton";
+import HighlightAll from "@/components/ui/highlight-all";
 
 export async function generateStaticParams() {
 	const posts = await getAllPosts();
@@ -87,10 +87,13 @@ export default async function BlogPage({ params }: BlogPostPageProps) {
 		}
 	}
 	const relatedPosts = Array.from(relatedPostsSet).slice(0, 3);
+
+	const formatedDate = new Date(post.date).toLocaleDateString("da-DK", { day: "numeric", weekday: "long", month: "long", year: "numeric", timeZone: "Europe/Copenhagen" });
 	
 	return (
 		<>
 			<Container className="py-8">
+				<HighlightAll />
 				<p><Link href="/">Hjem</Link> <FaChevronRight className="inline align-middle mb-1" /> <Link href="/artikler">Artikler</Link> <FaChevronRight className="inline align-middle mb-1" /> {post.title}</p>
 				<div className="xl:flex xl:gap-32">
 					<script
@@ -102,7 +105,8 @@ export default async function BlogPage({ params }: BlogPostPageProps) {
 					<article id="blogPost" className="xl:flex-2">
 						<header>
 							<h1 className="font-heading text-3xl">{post.title}</h1>
-							<p>Af {post.author}, <time dateTime={post.date}>{new Date(post.date).toLocaleDateString("da-DK", { day: "numeric", weekday: "long", month: "long", year: "numeric" })}</time></p>
+							<p>Af {post.author}, <time dateTime={post.date}>{formatedDate}</time></p>
+							<LinkedinShareButton url={new URL(`/artikler/${slug}`, new URL(process.env.NEXT_PUBLIC_SITE_URL!)).toString()} />
 							<p><span>{post.readingTime.words}</span> ord, ca. {Math.round(post.readingTime.minutes)} minutter</p>
 						</header>
 						<div dangerouslySetInnerHTML={{ __html: post.content }} className="pt-8" />
@@ -118,7 +122,6 @@ export default async function BlogPage({ params }: BlogPostPageProps) {
 				</div>
 				<hr />
 				<p><Link href="#top">Tilbage til toppen</Link></p>
-				<script>hljs.highlightAll()</script>
 			</Container>
 		</>
 	);
