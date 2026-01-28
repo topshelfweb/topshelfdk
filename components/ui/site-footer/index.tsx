@@ -8,6 +8,9 @@ export default function SiteFooter() {
 		"@type": "Organization",
 		"name": "Topshelf Konsulentservices",
 		"url": "https://topshelfweb.dk",
+		"sameAs": [
+			"https://www.linkedin.com/company/topshelfweb"
+		],
 		"logo": "https://topshelfweb.dk/logo.png",
 		"address": {
 			"@type": "PostalAddress",
