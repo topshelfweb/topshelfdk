@@ -109,7 +109,7 @@ Du kan godt have en navigation, der:
 
 - Overholder WCAG
 - Består alle tekniske tests
-- Og stadig sender brugerne vild
+- Og stadig forvirrer dine brugere
 
 Tilgængelighed handler om adgang.  
 Brugervenlighed handler om forståelse.
