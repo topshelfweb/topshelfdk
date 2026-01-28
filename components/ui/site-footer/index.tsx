@@ -3,6 +3,21 @@ import Container from "../container";
 import { FaGlasses, FaLinkedin, FaRss, FaSitemap } from "react-icons/fa";
 
 export default function SiteFooter() {
+	const ldJson = {
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "Topshelf Konsulentservices",
+		"url": "https://topshelfweb.dk",
+		"logo": "https://topshelfweb.dk/logo.png",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "Slagelsevej 10, 2.th.",
+			"addressLocality": "Kalundborg",
+			"postalCode": "4400",
+			"addressCountry": "DK"
+		},
+	};
+
 	return (
 		<footer className="bg-black py-8 text-iceblue">
 			<Container className="lg:flex justify-between">
@@ -44,6 +59,12 @@ export default function SiteFooter() {
 				<div className="mb-8 lg:mb-0">
 					<h2>Kontakt</h2>
 					Topshelf Konsulentservices
+					<script
+						type="application/ld+json"
+						dangerouslySetInnerHTML={{
+							__html: JSON.stringify(ldJson).replace(/</g, '\\u003c'),
+						}}
+					/>
 					<address className="not-italic">Slagelsevej 10, 2.th.<br />4400 Kalundborg<br /></address>
 					CVR: 28629729
 				</div>
