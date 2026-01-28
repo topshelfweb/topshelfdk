@@ -24,7 +24,7 @@ export default async function Articles() {
 			"wordCount": post.readingTime.words,
 			"keywords": post.tags.join(", "),
 			"url": `${process.env.NEXT_PUBLIC_SITE_URL}/artikler/${post.slug}`,
-			"image": "${process.env.NEXT_PUBLIC_SITE_URL}/artikler/${post.slug}/opengraph-image"
+			"image": `${process.env.NEXT_PUBLIC_SITE_URL}/artikler/${post.slug}/opengraph-image`
 		})),
 	};
 
