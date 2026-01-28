@@ -63,13 +63,39 @@ export default async function BlogPage({ params }: BlogPostPageProps) {
 
 	const jsonLd = {
 		"@context": "https://schema.org",
-		"@type": "Article",
+		"@type": "BlogPosting",
 		name: post.title,
-		author: post.author || "Brian Emilius",
+		author: {
+			"@type": "Person",
+			"name": post.author || "Brian Emilius",
+			"url": "https://www.brianemilius.com/about"
+		},
 		"datePublished": post.date,
 		keywords: post.tags.join(", "),
 		wordCount: post.readingTime.words,
+		url: `${process.env.NEXT_PUBLIC_SITE_URL}/artikler/${post.slug}`,
+		image: `${process.env.NEXT_PUBLIC_SITE_URL}/artikler/${post.slug}/opengraph-image`,
 	};
+
+	const breadcrumbJSONLD = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Hjem",
+        "item": "https://www.topshelf.dk/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Artikler",
+        "item": "https://www.topshelf.dk/artikler"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title
+      }]
+    }
 
 	const relatedPostsSet = new Set<BlogPost>();
 	for (const tag of post.tags) {
@@ -94,6 +120,12 @@ export default async function BlogPage({ params }: BlogPostPageProps) {
 		<>
 			<Container className="py-8">
 				<HighlightAll />
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(breadcrumbJSONLD).replace(/</g, '\\u003c'),
+					}}
+				/>
 				<p><Link href="/">Hjem</Link> <FaChevronRight className="inline align-middle mb-1" /> <Link href="/artikler">Artikler</Link> <FaChevronRight className="inline align-middle mb-1" /> {post.title}</p>
 				<div className="xl:flex xl:gap-32">
 					<script
