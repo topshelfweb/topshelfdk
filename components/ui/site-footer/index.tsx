@@ -7,11 +7,11 @@ export default function SiteFooter() {
 		"@context": "https://schema.org",
 		"@type": "Organization",
 		"name": "Topshelf Konsulentservices",
-		"url": "https://topshelfweb.dk",
+		"url": "https://topshelf.dk",
 		"sameAs": [
 			"https://www.linkedin.com/company/topshelfweb"
 		],
-		"logo": "https://topshelfweb.dk/logo.png",
+		"logo": "https://topshelf.dk/logo.png",
 		"address": {
 			"@type": "PostalAddress",
 			"streetAddress": "Slagelsevej 10, 2.th.",
