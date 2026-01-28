@@ -34,7 +34,7 @@ export default async function OpenGraphImage({
       >
         {/* Top bar */}
         <div style={{ display: "flex", justifyContent: "space-between", opacity: 0.9 }}>
-          <div style={{ fontSize: 28, fontWeight: 700, display: "flex" }}>Topshelf</div>
+          <div style={{ fontSize: 28, fontWeight: 700, display: "flex" }}>Topshelf Konsulentservices</div>
           <div style={{ fontSize: 22, opacity: 0.8, display: "flex" }}>topshelf.dk</div>
         </div>
 
