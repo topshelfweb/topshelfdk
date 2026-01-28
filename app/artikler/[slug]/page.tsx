@@ -64,13 +64,13 @@ export default async function BlogPage({ params }: BlogPostPageProps) {
 	const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "BlogPosting",
-		name: post.title,
+		headline: post.title,
 		author: {
 			"@type": "Person",
 			"name": post.author || "Brian Emilius",
 			"url": "https://www.brianemilius.com/about"
 		},
-		"datePublished": post.date,
+		"datePublished": new Date(post.date).toISOString(),
 		keywords: post.tags.join(", "),
 		wordCount: post.readingTime.words,
 		url: `${process.env.NEXT_PUBLIC_SITE_URL}/artikler/${post.slug}`,
