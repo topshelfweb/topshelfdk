@@ -7,7 +7,7 @@ async function getBlogPosts() {
 	return blogPosts.map(post => ({
 		url: "https://www.topshelf.dk/artikler/" + post.slug,
 		lastModified: new Date(post.date),
-		changeFrequency: "yearly" as const,
+		changeFrequency: "weekly" as const,
 		priority: 0.8,
 	}));
 }
@@ -20,7 +20,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		{
 			url: "https://www.topshelf.dk",
 			lastModified: posts[0].lastModified,
-			changeFrequency: "monthly",
+			changeFrequency: "weekly",
 			priority: 1
 		},
 		/* {
@@ -45,7 +45,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		{
 			url: "https://www.topshelf.dk/artikler",
 			lastModified: posts[0].lastModified,
-			changeFrequency: "monthly",
+			changeFrequency: "weekly",
 			priority: 0.7
 		},
 		{
