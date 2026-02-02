@@ -5,7 +5,7 @@ export async function GET(request: Request) {
 
 	const postsInRSSFormat = posts.map(post => (`<item>
 			<title>${post.title}</title>
-			<creator>${post.author}</creator>
+			<atom:author>${post.author}</atom:author>
 			<description>${post.excerpt}</description>
 			<link>https://www.topshelf.dk/artikler/${post.slug}</link>
 			<guid>https://www.topshelf.dk/artikler/${post.slug}</guid>
