@@ -9,7 +9,7 @@ export async function GET(request: Request) {
 			<description>${post.excerpt}</description>
 			<link>https://www.topshelf.dk/artikler/${post.slug}</link>
 			<guid>https://www.topshelf.dk/artikler/${post.slug}</guid>
-			<pubDate>${new Date(post.date).toISOString()}</pubDate>
+			<pubDate>${new Date(post.date).toUTCString()}</pubDate>
 	 </item>`)).join("");
 
 	const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
@@ -18,9 +18,9 @@ export async function GET(request: Request) {
 	<title>Topshelf Artikler</title>
 	<description>Tekniske artikler og indsigter om webudvikling og tilgængelighed</description>
 	<link>https://www.topshelf.dk/artikler</link>
+	<atom:link href="https://www.topshelf.dk/rss.xml" rel="self" type="application/rss+xml" />
 	<copyright>2026 by Topshelf</copyright>
 	${postsInRSSFormat}
-	<atom:link href="https://www.topshelf.dk/rss.xml" rel="self" type="application/rss+xml" />
 </channel>
 </rss>`;
 
