@@ -1,5 +1,7 @@
 import Container from "@/components/ui/container";
 
+export const runtime = "edge";
+
 export default function PrivacyPage() {
 	return (
 		<section id="blogPost" className="py-8">
