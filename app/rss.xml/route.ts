@@ -8,6 +8,7 @@ export async function GET(request: Request) {
 			<creator>${post.author}</creator>
 			<description>${post.excerpt}</description>
 			<link>https://www.topshelf.dk/artikler/${post.slug}</link>
+			<guid>https://www.topshelf.dk/artikler/${post.slug}</guid>
 			<pubDate>${new Date(post.date).toISOString()}</pubDate>
 	 </item>`)).join("");
 
