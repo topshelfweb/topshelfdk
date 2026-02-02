@@ -5,7 +5,7 @@ export async function GET(request: Request) {
 
 	const postsInRSSFormat = posts.map(post => (`<item>
 			<title>${post.title}</title>
-			<dc:creator>${post.author}</dc:creator>
+			<creator>${post.author}</creator>
 			<description>${post.excerpt}</description>
 			<link>https://www.topshelf.dk/artikler/${post.slug}</link>
 			<pubDate>${new Date(post.date).toISOString()}</pubDate>
