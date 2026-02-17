@@ -72,7 +72,7 @@ export function CookieSettings({ onBack, onClose }: CookieSettingsProps) {
 				<div className="flex items-center justify-between border-b pb-4">
 					<div>
 						<h3 className="font-semibold text-lg">Google Analytics</h3>
-						<p className="text-sm text-gray-600">Hjælper os med at forbedre dit oplevelse</p>
+						<p className="text-sm text-gray-600">Hjælper mig med at forbedre din oplevelse</p>
 					</div>
 					<input
 						type="checkbox"
