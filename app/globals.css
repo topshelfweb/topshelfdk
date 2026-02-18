@@ -17,6 +17,7 @@
   --color-snowwhite: var(--SnowWhite);
   --color-nordicink: var(--NordicInk);
   --color-pinegreen: var(--PineGreen);
+  --text-sm: 1rem;
 }
 
 @theme inline {
@@ -51,26 +52,33 @@ h5,
 h5 {
   font-family: var(--font-comfortaa) !important;
   margin-bottom: 1.2rem;
+  line-height: 130%;
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 p {
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
 #blogPost ul {
   list-style: disc !important;
+  font-size: 1.2rem;
   margin: 1rem;
   margin-left: 2rem;
+}
+
+#blogPost li {
+  font-size: inherit;
 }
