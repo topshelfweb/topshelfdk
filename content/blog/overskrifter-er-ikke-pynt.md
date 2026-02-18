@@ -1,7 +1,7 @@
 ---
 title: "Overskrifter er ikke pynt, de er navigation for skærmlæsere"
 excerpt: "Overskrifter er ikke kun et visuelt greb. De er selve navigationsstrukturen for brugere af skærmlæsere og andre hjælpemidler. Når H1–H6 bruges forkert, springes over eller erstattes af \"visuelle overskrifter\" uden korrekt semantik, mister siden sin logiske opbygning. I denne artikel forklarer jeg, hvorfor korrekt overskriftshierarki er afgørende for forståelse, navigation og professionel informationsarkitektur, og hvordan små strukturelle justeringer kan gøre en stor forskel for både tilgængelighed og brugeroplevelse."
-date: "2026-02-18"
+date: "2026-02-17"
 tags: ["accessibility"]
 featured: false
 author: "Brian Emilius"
