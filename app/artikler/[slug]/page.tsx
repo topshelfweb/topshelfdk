@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
 	return {
 		title: post.title,
-		description: post.excerpt,
+		description: post.excerpt.slice(0, 155),
 		openGraph: {
 			url: new URL(`/artikler/${slug}`, baseUrl).toString(),
 			title: post.title.slice(0, 60),
@@ -152,7 +152,7 @@ export default async function BlogPage({ params }: BlogPostPageProps) {
 						</ul>
 					</aside>
 				</div>
-				<hr />
+				<hr className="my-4" />
 				<p><Link href="#top">Tilbage til toppen</Link></p>
 			</Container>
 		</>

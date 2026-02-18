@@ -7,7 +7,7 @@ export default function SiteHeader() {
 		<header className="bg-fjordblue py-4" id="top">
 			<Container className="flex justify-between">
 				<Link href="/" className="text-iceblue">
-					<Image src="/logo_small.png" alt="" width="128" height="128" className="inline h-6 w-auto leading-[175%] align-middle mb-1" />
+					<Image src="/logo_small.png" alt="Topshelf logo" width="128" height="128" className="inline h-6 w-auto leading-[175%] align-middle mb-1" />
 					<span className="sr-only lg:not-sr-only">&nbsp;Topshelf Konsulentservices</span>
 				</Link>
 				<nav>
