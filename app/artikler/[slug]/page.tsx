@@ -147,7 +147,7 @@ export default async function BlogPage({ params }: BlogPostPageProps) {
 						<h2 className="font-heading text-2xl mt-12 mb-4">Relaterede artikler</h2>
 						<ul className="flex flex-col gap-4">
 							{relatedPosts.map((relatedPost: BlogPost) => (
-								<ArticleCard key={relatedPost.slug} article={relatedPost} />
+								<li key={relatedPost.slug}><ArticleCard article={relatedPost} /></li>
 							))}
 						</ul>
 					</aside>
