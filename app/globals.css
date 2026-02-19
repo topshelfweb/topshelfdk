@@ -50,21 +50,24 @@ h3,
 h4,
 h5,
 h5 {
-  font-family: var(--font-comfortaa) !important;
+  font-family: var(--font-funnelDisplay) !important;
   margin-bottom: 1.2rem;
   line-height: 130%;
 }
 
 h1 {
   font-size: 2.25rem;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 2rem;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 1.75rem;
+  font-weight: 700;
 }
 
 p {

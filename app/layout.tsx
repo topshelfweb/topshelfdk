@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Comfortaa } from "next/font/google";
+import { Comfortaa, Funnel_Display } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/ui/site-header";
 import SiteFooter from "@/components/ui/site-footer";
@@ -8,6 +8,11 @@ import { GA4Consent } from "@/components/ui/analytics/ga4-consent";
 
 const comfortaa = Comfortaa({
   variable: "--font-comfortaa",
+  subsets: ["latin"],
+});
+
+const funnelDisplay = Funnel_Display({
+  variable: "--font-funnelDisplay",
   subsets: ["latin"],
 });
 
@@ -28,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="da" data-scroll-behavior="smooth">
       <body
-        className={`${comfortaa.variable} antialiased`}
+        className={`${comfortaa.variable} ${funnelDisplay.variable} antialiased`}
       >
         <SiteHeader />
         <main>
