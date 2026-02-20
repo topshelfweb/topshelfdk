@@ -28,7 +28,7 @@ export default function SiteFooter() {
 					<h2>Socials</h2>
 					<ul>
 						<li>
-							<Link href="https://www.linkedin.com/company/topshelfweb" target="_blank" rel="noopener" aria-label="Link til LinkedIn">
+							<Link href="https://www.linkedin.com/company/topshelfweb" target="_blank" rel="noopener" aria-label="LinkedIn logo">
 								<FaLinkedin size={32} />
 							</Link>
 						</li>

@@ -7,7 +7,7 @@ const serviceInfo = [
 		title: "Brugertest, Usability &amp; <abbr title=\"User Experience\">UX</abbr>",
 		image: {
 			src: "/ux.png",
-			alt: "",
+			alt: "Man med høretelefoner sidder ved skrivebord. Computer skærm på skrivebordet viser et video-opkald.",
 			width: 1536,
 			height: 1014
 		},
@@ -18,7 +18,7 @@ const serviceInfo = [
 		title: "Accessibility &amp; Tilgængelighed",
 		image: {
 			src: "/a11y.png",
-			alt: "",
+			alt: "Kviden med sorte solbriller og høretelefoner sidder ved skrivebord og taster på et tastatur.",
 			width: 1536,
 			height: 1014
 		},
@@ -29,7 +29,7 @@ const serviceInfo = [
 		title: "Sparring om implementation",
 		image: {
 			src: "/sparring.png",
-			alt: "",
+			alt: "Man peger på TV skærm med Power Point præsentation. To mænd og en kvinde sidder ned ved konferencebord og ser på.",
 			width: 1536,
 			height: 1014
 		},

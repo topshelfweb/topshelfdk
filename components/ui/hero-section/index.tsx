@@ -7,7 +7,7 @@ export default function Hero() {
 			<div className="absolute w-full h-full overflow-hidden">
 				<Image
 					src="/hero.jpg"
-					alt=""
+					alt="Mand i kørestol sidder og arbejder på bærbar computer. Kvinde læner sig ned og peger på skærmen. Begge smiler."
 					width={1536}
 					height={1024}
 					className="h-full w-auto lg:h-auto lg:w-full object-cover"
