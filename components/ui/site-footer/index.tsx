@@ -22,7 +22,7 @@ export default function SiteFooter() {
 	};
 
 	return (
-		<footer className="bg-black py-8 text-iceblue">
+		<footer className="bg-nordicink py-8 text-iceblue">
 			<Container className="lg:flex justify-between">
 				<div className="mb-8 lg:mb-0">
 					<h2>Socials</h2>

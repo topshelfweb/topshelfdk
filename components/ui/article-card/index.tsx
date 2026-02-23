@@ -7,7 +7,7 @@ export default function ArticleCard({ article }: { article: BlogPost }) {
 
 	return (
 		<Link href={`/artikler/${article.slug}`}>
-			<div className="dark:bg-iceblue bg-snowwhite p-8 xl:p-4 rounded-md min-h-full text-nordicink">
+			<div className="bg-snowwhite p-8 xl:p-4 rounded-md min-h-full text-nordicink drop-shadow-xl">
 				<h3 dangerouslySetInnerHTML={{ __html: article.title }} className="text-3xl font-heading" />
 				<time dateTime={article.date} className="text-sm">{formatedDate}</time>
 				<p dangerouslySetInnerHTML={{ __html: article.excerpt }} />
