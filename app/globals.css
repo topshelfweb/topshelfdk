@@ -75,13 +75,49 @@ p {
   margin-bottom: 1.5rem;
 }
 
-#blogPost ul {
-  list-style: disc !important;
+#blogPost ul, #blogPost ol {
   font-size: 1.2rem;
   margin: 1rem;
   margin-left: 2rem;
 }
 
+#blogPost ul {
+  list-style: disc !important;
+}
+
+#blogPost ol {
+  list-style-type: decimal !important;
+}
+
 #blogPost li {
   font-size: inherit;
+}
+
+#blogPost blockquote {
+  background-color: var(--HuskyFur);
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+#blogPost blockquote::after,
+#blogPost blockquote::before {
+  position: absolute;
+  font-size: 3rem;
+}
+
+#blogPost blockquote::before {
+  content: "“";
+  left: -0.5rem;
+  top: -0.2rem;
+}
+
+#blogPost blockquote::after {
+  content: "”";
+  right: -0.4rem;
+  bottom: -1.5rem;
+}
+
+#blogPost blockquote p {
+  margin: 0;
 }
