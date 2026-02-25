@@ -2,7 +2,7 @@
 title: "3 hurtige brugertests du kan lave nu"
 excerpt: "Du behøver ikke store budgetter eller avancerede værktøjer for at teste din hjemmeside. Med tre enkle brugertests kan du hurtigt afsløre, hvor kunderne bliver forvirrede – og hvor du mister værdi. Indlægget viser, hvordan du kommer i gang med det samme. Små indsigter kan føre til store forbedringer."
 date: "2026-02-25"
-tags: ["usability", "ux", "testing"]
+tags: ["brugervenlighed", "ux", "testing"]
 featured: false
 author: "Brian Emilius"
 ---

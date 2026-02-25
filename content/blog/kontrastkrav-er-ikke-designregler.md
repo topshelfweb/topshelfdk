@@ -2,7 +2,7 @@
 title: "Kontrastkrav er ikke design-regler: de er læsbarhed i virkeligheden"
 excerpt: "Kontrastkrav handler ikke om at begrænse design, de handler om, hvorvidt indhold faktisk kan læses i virkelige situationer. Tekst oven på billeder, grå på grå-løsninger og vurderinger baseret på \"min egen skærm\" er blandt de mest udbredte årsager til dårlig læsbarhed. Problemerne rammer ikke kun svagtseende, men helt almindelige brugere på mobile enheder, i dårligt lys eller under tidspres. God kontrast er ikke et WCAG-tjekpunkt. Det er grundlæggende brugervenlighed."
 date: "2026-02-03"
-tags: ["accessibility"]
+tags: ["tilgængelighed"]
 featured: false
 author: "Brian Emilius"
 ---

@@ -2,7 +2,7 @@
 title: "Brugervenlighed er ikke mavefornemmelse: sådan tester man rigtigt"
 excerpt: "Brugervenlighed handler ikke om, hvad der føles rigtigt, men om hvad der faktisk virker for brugerne. I dette indlæg forklarer jeg, hvorfor mavefornemmelser ofte fører til forkerte beslutninger, og hvordan simple usability-tests kan afsløre de problemer, der koster konverteringer, uden at det kræver store ressourcer."
 date: "2026-01-02"
-tags: ["usability"]
+tags: ["brugervenlighed"]
 featured: false
 author: "Brian Emilius"
 ---

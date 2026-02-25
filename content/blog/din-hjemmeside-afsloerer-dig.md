@@ -2,7 +2,7 @@
 title: "Din hjemmeside afslører dig og det starter med dine overskrifter"
 excerpt: "Mange hjemmesider ser professionelle ud, men deres overskrifter skaber forvirring frem for retning. I dette indlæg sætter jeg fokus på, hvordan overskrifter afslører, om din side er strategisk gennemtænkt eller blot designet indefra. Du får en enkel øvelse, der hurtigt viser, om din struktur faktisk hjælper brugeren eller bare fylder visuelt."
 date: "2026-02-18"
-tags: ["usability"]
+tags: ["brugervenlighed"]
 featured: false
 author: "Brian Emilius"
 ---

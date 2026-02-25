@@ -2,7 +2,7 @@
 title: "Når navigationen teknisk set er korrekt, men stadig ikke kan bruges"
 excerpt: "Det er muligt at have en navigation, der overholder WCAG og består alle tekniske tests, og som alligevel er svær at bruge. Artiklen viser, hvordan for mange links, ulogisk fokus-rækkefølge og gentagelser i navigationen kan skabe forvirring for brugerne, selv når alt er formelt korrekt. Pointen er enkel: WCAG sikrer adgang, men ikke nødvendigvis overblik eller brugervenlighed."
 date: "2026-01-29"
-tags: ["ux", "accessibility"]
+tags: ["ux", "tilgængelighed"]
 featured: false
 author: "Brian Emilius"
 ---

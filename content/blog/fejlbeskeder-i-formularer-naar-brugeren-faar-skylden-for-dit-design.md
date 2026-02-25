@@ -2,7 +2,7 @@
 title: "Fejlbeskeder i formularer: Når brugeren får skylden for dit design"
 excerpt: "Små fejl i formularer kan have store konsekvenser. Utydelige eller dårligt placerede fejlbeskeder skaber forvirring, frustration og får brugere til at opgive – ofte uden at du opdager det. Artiklen gennemgår typiske fejl i formular-feedback og viser, hvordan klare, meningsgivende fejlbeskeder kombineret med tekst og farver kan forbedre brugeroplevelsen markant og øge konverteringen."
 date: "2026-01-22"
-tags: ["usability", "accessibility"]
+tags: ["brugervenlighed", "tilgængelighed"]
 featured: false
 author: "Brian Emilius"
 ---

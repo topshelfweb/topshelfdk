@@ -2,7 +2,7 @@
 title: "Hvad er RATS og hvorfor bør ledelsen tage det alvorligt?"
 excerpt: "RATS (Riskiest Assumption Test) hjælper jer med at identificere og teste de antagelser, der kan vælte jeres digitale projekt. I stedet for at gætte tester I det, der er mest risikabelt først. Færre fejlinvesteringer. Bedre beslutninger."
 date: "2026-02-23"
-tags: ["usability", "testing", "ux"]
+tags: ["brugervenlighed", "testing", "ux"]
 featured: false
 author: "Brian Emilius"
 ---
