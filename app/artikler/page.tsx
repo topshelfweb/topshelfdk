@@ -1,6 +1,7 @@
 import ArticleCard from "@/components/ui/article-card";
+import Chip from "@/components/ui/chip";
 import Container from "@/components/ui/container";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, getAllTags } from "@/lib/blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 
 export default async function BlogPage() {
 	const posts = await getAllPosts();
+	const tags = await getAllTags();
 
 	const ldJson = {
 		"@context": "https://schema.org",
@@ -48,6 +50,7 @@ export default async function BlogPage() {
 			/>
 			<Container>
 				<h2>Artikler</h2>
+				<p className="flex flex-wrap gap-2">{tags.map((tag, i) => <Chip name={tag} key={i} />)}</p>
 				<ul className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 					{posts.map((post, index) => <li className="flex-[1_1_0]" key={index}><ArticleCard article={post} /></li>)}
 				</ul>
