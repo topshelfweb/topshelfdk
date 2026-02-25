@@ -2,7 +2,7 @@
 title: "Et manifest for læsbar tekst"
 excerpt: "Dit design kan være smukt. Det kan også være umuligt at læse. I dette manifest går jeg direkte efter nogle af webdesigns mest populære valg: små skrifter, lyse kontraster og typografi, der ser bedre ud end den fungerer. Ingen regler. Ingen WCAG-paragraffer. Bare et holdningsbaseret take på, hvorfor læsbar tekst er et kvalitetsstempel, ikke en begrænsning."
 date: "2026-02-05"
-tags: ["usability", "accessability"]
+tags: ["usability", "accessibility"]
 featured: false
 author: "Brian Emilius"
 ---
