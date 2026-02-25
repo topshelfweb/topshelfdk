@@ -73,7 +73,7 @@ export default function SiteFooter() {
 				</div>
 			</Container>
 			<Container>
-				<p className="text-center text-sm">Copyright &copy; 2026</p>
+				<p className="text-center text-sm">Copyright &copy; 2023-{new Date().getFullYear()}</p>
 			</Container>
 		</footer>
 	);
