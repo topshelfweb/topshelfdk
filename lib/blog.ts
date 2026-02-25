@@ -70,3 +70,9 @@ export async function getPostsByTag(tag: string): Promise<BlogPost[]> {
 	const allPosts = await getAllPosts();
 	return allPosts.filter(post => post.tags.includes(tag));
 }
+
+export async function getAllTags(): Promise<string[]> {
+	const allPosts = await getAllPosts();
+	const allTags = allPosts.map(post => post.tags);
+	return [...new Set(allTags.flat())];
+}
