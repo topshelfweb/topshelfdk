@@ -49,10 +49,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			priority: 0.7
 		},
 		{
+			url: "https://www.topshelf.dk/rss.xml",
+			lastModified: posts[0].lastModified,
+			changeFrequency: "weekly",
+			priority: 0.6
+		},
+		{
 			url: "https://www.topshelf.dk/privatliv",
 			lastModified: "2025-12-29",
 			changeFrequency: "yearly",
-			priority: 0.6
+			priority: 0.5
 		}
 	];
 }
