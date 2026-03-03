@@ -91,7 +91,7 @@ ARIA må ikke omskrive virkeligheden.
 Den skal beskrive den.
 
 3. ARIA ovenpå dårlig struktur
-``html
+```html
 <div role="navigation">
   <div role="link">Forside</div>
   <div role="link">Produkter</div>
